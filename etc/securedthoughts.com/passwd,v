@@ -1,0 +1,39 @@
+head	1.2;
+access;
+symbols;
+locks
+	secure29:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2014.02.06.03.01.08;	author secure29;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.02.06.03.01.08;	author secure29;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@neha.jayaprakash:x:27880:27924::/home/secure29/mail/securedthoughts.com/neha.jayaprakash:/home/secure29
+@
+
+
+1.1
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d1 1
+@
