@@ -1,0 +1,169 @@
+/*.robot {
+  position: relative;
+  left: 200px;
+}*/
+.robo-beep {
+  width: 5px;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 5px solid #777;
+  border-bottom: 30px solid #888;
+  position: relative;
+  left: 45px;
+}
+
+@keyframes blink {
+  50% {
+    background: radial-gradient(circle, red 10%, transparent 40%), #cc5;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    background: -webkit-radial-gradient(circle, red 10%, transparent 40%), #cc5;
+  }
+}
+@-moz-keyframes blink {
+  50% {
+    background: -moz-radial-gradient(circle, red 10%, transparent 40%), #cc5;
+  }
+}
+.laser {
+  animation: blink 1.5s infinite;
+  -webkit-animation: blink 1.5s infinite;
+  -moz-animation: blink 1.5s infinite;
+}
+.robo-brain {
+  background: radial-gradient(circle, white 10%, transparent 40%), #cc5;
+  background: -moz-radial-gradient(circle, white 10%, transparent 40%), #cc5; 
+  background: -webkit-radial-gradient(circle, white 10%, transparent 40%), #cc5;
+  background-size: 25px 60px;
+  height: 60px;
+  width: 50px;
+  border-radius: 30px 30px 5px 5px;
+  border-bottom: 10px solid #666;
+  position: relative;
+  left: 25px;
+}
+.robo-torso {
+  height: 0;
+  width: 100px;
+  border-top: 90px solid #bc6;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-radius: 15px 15px 50px 50px;
+}
+.lefthand {
+  font-family: 'Poller One', verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #666;
+  transform: rotate(200deg);
+  -webkit-transform: rotate(200deg);
+  -moz-transform: rotate(200deg);
+  position: relative;
+  top: -100px;
+  left: -75px;
+  z-index: -1;
+}
+.righthand {
+  font-family: 'Poller One', verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #666;
+  transform: scaleY(-1) rotate(20deg);
+  -webkit-transform: scaleY(-1) rotate(20deg);
+  -moz-transform: scaleY(-1) rotate(20deg);
+  position: relative;
+  top: -185px;
+  left: 75px;
+  z-index: -1;
+}
+.robo-foot {
+  height: 40px;
+  width: 40px;
+  background: #ccc;
+  border-radius: 40px;
+  border: 10px solid #999;
+  position: relative;
+  left: 30px;
+  top: -10px;
+  z-index: -1;
+}
+
+@keyframes lefttoright {
+  0% {left: 0px;}
+  25% {left:200px;}
+  50% {left:400px;}
+  75% {left: 200px;}
+  100% {left:0px;}
+}
+
+@-webkit-keyframes lefttoright {
+  0% {left: 0px;}
+  25% {left:200px;}
+  50% {left:400px;}
+  75% {left: 200px;}
+  100% {left:0px;}
+}
+
+@-moz-keyframes lefttoright {
+  0% {left: 0px;}
+  25% {left:200px;}
+  50% {left:400px;}
+  75% {left: 200px;}
+  100% {left:0px;}
+}
+@-ms-keyframes lefttoright {
+  0% {left: 0px;}
+  25% {left:200px;}
+  50% {left:400px;}
+  75% {left: 200px;}
+  100% {left:0px;}
+}
+
+#badguy1 {
+  animation: lefttoright 4s 2;
+  -webkit-animation: lefttoright 4s 2;
+  -moz-animation: lefttoright 4s 2;
+  -ms-animation: lefttoright 4s 2;
+  position: relative;
+}
+
+@keyframes righttoleft {
+  0% {right: 0px;}
+  25% {right:200px;}
+  50% {right:400px;}
+  75% {right: 200px;}
+  100% {right:0px;}
+}
+
+@-webkit-keyframes righttoleft {
+  0% {right: 0px;}
+  25% {right:200px;}
+  50% {right:400px;}
+  75% {right: 200px;}
+  100% {right:0px;}
+}
+
+@-moz-keyframes righttoleft {
+  0% {right: 0px;}
+  25% {right:200px;}
+  50% {right:400px;}
+  75% {right: 200px;}
+  100% {right:0px;}
+}
+@-ms-keyframes righttoleft {
+  0% {right: 0px;}
+  25% {right:200px;}
+  50% {right:400px;}
+  75% {right: 200px;}
+  100% {right:0px;}
+}
+
+#badguy2 {
+  animation: righttoleft 4s 2;
+  -webkit-animation: righttoleft 4s 2;
+  -moz-animation: righttoleft 4s 2;
+  -ms-animation: righttoleft 4s 2;
+  position: relative;
+}
