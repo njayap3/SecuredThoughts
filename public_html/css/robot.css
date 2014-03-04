@@ -15,16 +15,19 @@
 @keyframes blink {
   50% {
     background: radial-gradient(circle, red 10%, transparent 40%), #cc5;
+     background-size: 25px 60px;
   }
 }
 @-webkit-keyframes blink {
   50% {
     background: -webkit-radial-gradient(circle, red 10%, transparent 40%), #cc5;
+    -webkit-background-size: 25px 60px;
   }
 }
 @-moz-keyframes blink {
   50% {
     background: -moz-radial-gradient(circle, red 10%, transparent 40%), #cc5;
+    -moz-background-size: 25px 60px;
   }
 }
 .laser {
@@ -33,16 +36,18 @@
   -moz-animation: blink 1.5s infinite;
 }
 .robo-brain {
-  background: radial-gradient(circle, white 10%, transparent 40%), #cc5;
-  background: -moz-radial-gradient(circle, white 10%, transparent 40%), #cc5; 
-  background: -webkit-radial-gradient(circle, white 10%, transparent 40%), #cc5;
-  background-size: 25px 60px;
   height: 60px;
   width: 50px;
   border-radius: 30px 30px 5px 5px;
   border-bottom: 10px solid #666;
   position: relative;
   left: 25px;
+  background: radial-gradient(circle, white 10%, transparent 40%), #cc5;
+  background: -moz-radial-gradient(circle, white 10%, transparent 40%), #cc5; 
+  background: -webkit-radial-gradient(circle, white 10%, transparent 40%), #cc5;
+  -webkit-background-size: 25px 60px;
+  -moz-background-size: 25px 60px;
+  background-size: 25px 60px;
 }
 .robo-torso {
   height: 0;
